@@ -63,11 +63,43 @@
     font-size: smaller;
 }
 
+.container {
+    position: relative;
+    object-fit: fill;
+    width: 100%;
+}
 
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--dark);
+    color: var(--light-grey);
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
+.container2 {
+    position: relative;
+    width: 45%;
+    display: inline;
+}
 
-/*    font-size: 65px;
-    float: left;
-    width: 50%;
-    margin-left: 50%;
-    height: 100px;
+.container:hover {
+    background-color: var(--reddish);
+    opacity: .5;
+}
+
+.container2:hover {
+    background-color: var(--reddish);
+    opacity: .5;
+}
+
+@media only screen and (max-width: 830px)  {
+    .container2 {
+        width: 100%;
+    }
+    * {
+        color: var(--dark);
+    }
+}
